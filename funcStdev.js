@@ -61,7 +61,7 @@ var times = function(w, h) {
 };
 
 
-								<< CAN ALSO BE WRITTEN >> ( though curry(...) does something very similar (wink) )
+			<< CAN ALSO BE WRITTEN >> ( though curry(...) does something very similar (wink) )
 
 
 var times = function(w) {
@@ -75,7 +75,7 @@ var times = function(w) {
 };
 
 
-								<< WHICH CAN BE RUN LIKE >>
+				<< WHICH CAN BE RUN LIKE >>
 
 
 var width = 5;
