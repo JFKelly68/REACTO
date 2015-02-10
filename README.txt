@@ -48,8 +48,8 @@ invoked by name, and do not have to be typed out again and again.
 		(See "Imperative Solution" in funcStdev.js)
 
 	
-	Imperative programs are written as a very exacting set of procedures that 
-a computer must follow in order to perform a calculation, the order of 
+	Imperative programs are written as a very exacting set of procedures 
+that a computer must follow in order to perform a calculation, the order of 
 execution is highly important and strict and well-defined control structures 
 are used (such as loops and branches) to guide the flow of the program. The 
 difference is being able to write what we WANT to do instead of HOW we do it. 
@@ -69,11 +69,11 @@ Instead, they return a new value (which could be itself a function) after
 carrying out a transformation on the original values (or functions). 
 
 
-	The key feature of functional programming is higher/first order functions; 
-functions that behave as ‘first class citizens’ in that they can be passed as 
-arguments to functions as well as being returned by functions. I will be 
-requesting that you use thistechnique exclusively for the REACTO, and I will 
-provide hints to guide you down the path.
+	The key feature of functional programming is higher/first order 
+functions; functions that behave as ‘first class citizens’ in that they can 
+be passed as arguments to functions as well as being returned by functions. 
+I will be requesting that you use thistechnique exclusively for the REACTO, 
+and I will provide hints to guide you down the path.
 
 
 
