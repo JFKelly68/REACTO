@@ -61,7 +61,7 @@ var times = function(w, h) {
 };
 
 
-								<< CAN ALSO BE WRITTEN >> ( though curry(...) does something very similar )
+								<< CAN ALSO BE WRITTEN >> ( though curry(...) does something very similar (wink) )
 
 
 var times = function(w) {
@@ -102,9 +102,22 @@ var curry = function (fn, fnLength) {
 };
 
 // I recommend taking a minute to think about which functions you are going to be needing
-// in order to transform the data into the values you want. You will be reusing some of functions 
-// that you write. This should look less like a list of instructions (Imperative Programming) 
+// in order to transform the data into the values you want. You will be using some of functions 
+// that you write more than once. This should look less like a list of instructions (Imperative Programming) 
 // and more like a library of functions.
+
+
+/* *****************************	FOR REFERENCE	*************************** */
+// 	This solution is Functional nirvana. If written very well, this is what your solution should look like.
+// 	It would be great if you could get here; however, this may be a very new concept and, conceptually, it is 
+// 	much more abstract than Imperative. The only answer I'm hoping you can achieve is in the console.log() just
+// 	above the ** EXPECTED END ** line below. The compose() function is written out at the bottom if you get stuck.
+
+// Final standard deviation function.
+var std = compose(Math.sqrt, mean, squaredDeviations);
+
+// Log the value
+console.log(std([1,2,3,4,5])); // >> 1.4142
 
 
 		
@@ -114,12 +127,12 @@ var curry = function (fn, fnLength) {
 var exArray = [1,2,3,4,5];
 
 	// Rewrite .reduce() as a curryable function instead of a method 
-	// 		(* the reduce method doesn't return a function *) 
-	// 	(** you should still use the method in the function **)
+	// 	(* because the reduce() method doesn't return a function *) 
+	// 		(** you should still use the method in the function **)
 var reduce = ;
 
 
-	// We will still need a callback function and one other function in order to fully utilize reduce...
+	// We will still need a callback function and one other function in order to fully utilize reduce()...
 
 
 
@@ -135,7 +148,7 @@ var map = ;
 
 
 
-// subtract the mean and square returning a new array
+// Subtract the mean and square, returning a new ARRAY
 var squaredDeviations = ;
 
 
@@ -146,6 +159,7 @@ console.log("Answer: ", Math.sqrt(mean(squaredDeviations(exArray))));  // >> 1.4
 
 
 
+/*********************************  EXPECTED END OF CODE  **********************************/
 
 
 
@@ -160,6 +174,17 @@ nesting functions inside one another, we would like to be able to define a new f
 of the nested functions and accepts the inner-most argument of the nested functions as its own argument.
 
 */
+
+
+
+
+
+/*	BELOW IS PART OF THE SOLUTION. TRY IMPLEMENTING COMPOSE() FIRST BEFORE PROCEEDING FURTHER */
+
+
+
+
+
 
 /* << DELETE ME (when complete) to see how compose() works. Pretty cool.
 
@@ -179,7 +204,7 @@ var compose = function() {
 var std = compose(Math.sqrt, mean, squaredDeviations);
 
 // Test it out
-console.log(std([1,2,3,4,5])); // >> 1.4142
+console.log("std([1,2,3,4,5]): ", std([1,2,3,4,5])); // >> 1.4142
  
 // this is the same as:
 console.log(compose(Math.sqrt, mean, squaredDeviations)([1,2,3,4,5])); // >> 1.4142

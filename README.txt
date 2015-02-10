@@ -11,11 +11,16 @@ The task here is:
 
 	Step-by-step, how to calculate Standard Deviation: 
 	- ex [2,4]
-		1) Calculate the arithmetic MEAN of the array.		(2+4)/LENGTH
-		2) Subtract the mean from each value in the array.	(2-3 = -1, 4-3 = 1)
-		3) SQUARE each mean subtracted value.				(-1^2 = 1, 1^2 = 1)
-		4) SUM the squared variations.						(1 + 1 = 2)
-		5) Take the square root of the sum.					(1.4142)
+		1) Calculate the arithmetic MEAN of the array.		
+				(2+4)/LENGTH
+		2) Subtract the mean from each value in the array.	
+				(2-3) = -1, (4-3) = 1
+		3) SQUARE each mean subtracted value.				
+				(-1^2 = 1, 1^2 = 1)
+		4) SUM the squared variations.						
+				(1 + 1) = 2
+		5) Take the square root of the sum.					
+				1.4142
 
 
 
